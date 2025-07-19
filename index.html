@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Professor Edom's Motor Temp Estimation</title>
   </head>
   <body>
@@ -69,19 +70,28 @@
           <div class="card pf">
             
             <div class="symbol pf-sym">
-              <img src="./assets/icons/thermometer (1).png" alt="">
+              <img src="./assets/icons/electric-plug.png" alt="">
             </div>
-            <div class="value">72 °C</div>
+            <div class="value">72 °</div>
             <div class="name">Power Factor</div>
 
           </div>
           <div class="card active-power">
             
             <div class="symbol pow-sym">
-              <img src="./assets/icons/thermometer (1).png" alt="">
+              <img src="./assets/icons/supply.png" alt="power">
             </div>
             <div class="value">72 W</div>
-            <div class="name">temperature</div>
+            <div class="name">Active Power</div>
+
+          </div>
+          <div class="card energy">
+            
+            <div class="symbol energy-sym">
+              <img src="./assets/icons/energy-system.png" alt="power">
+            </div>
+            <div class="value">72 kwh</div>
+            <div class="name">Energy</div>
 
           </div>
          
@@ -95,7 +105,7 @@
           </div>
           <div class="charts-container parameters">
             <div class="card chart">
-                
+                <canvas id="motorChart" height="150"></canvas>
             </div>
             <div class="card chart">
 
@@ -125,7 +135,7 @@
         </div>
       </div>
     </div>
-
+    <script src="js/chart.js"></script>
     <script src="js/script.js"></script>
     <footer>
       @copyright 2025: work by the Profs team

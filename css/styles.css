@@ -182,6 +182,29 @@ header{
   background-color: #b6e9f0;
 }
 
+.pf{
+  background-color: #ffe6e6;
+}
+.pf-sym{
+  background-color: #f5c0c0;
+}
+
+.active-power{
+  background-color: #fff7d9;
+}
+.pow-sym{
+  background-color: #fbecb9;
+}
+
+.energy{
+  background-color: #fee7da; 
+}
+.energy-sym{
+  background-color: rgba(255, 0, 0, 0.27);
+}
+
+
+
 .symbol{
   padding: 1.2rem;
   border-radius: 50%;
@@ -201,4 +224,32 @@ header{
   color: #999999;
   font-weight: bold;
   margin-top: 1rem;
+}
+
+
+
+
+/* footer */
+
+footer {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  width: 100%;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
