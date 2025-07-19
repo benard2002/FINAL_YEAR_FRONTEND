@@ -1,0 +1,204 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  /* background-color: #0f4c75; */
+  font-size: 1.4rem;
+}
+.navbar,.nav-menu{
+  display: flex;
+  align-items: center;
+  min-height: 3rem;
+}
+.navbar{
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  
+}
+.logo{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #007bff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  user-select: none;
+}
+.nav-menu{
+  list-style: none;
+  gap: 4rem;
+}
+.nav-link{
+  text-decoration: none;
+  color: black;
+
+  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+.nav-link:hover{
+  background-color: rgba(0, 119, 255, 0.1);
+  color: #007bff;
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #007bff, #3399ff); /* Sleek gradient */
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 999px; /* Pill shape */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.container{
+  /* border: 2px solid black; */
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.427);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+                    /* url("../assets/holigil-27--Rb8dv4yX7A-unsplash.jpg"); */
+  background-size: cover;
+  background-position: center;
+}
+.main-content{
+  /* border: 2px solid green; */
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+
+.parameters{
+  border-bottom: 1px solid #eeeeee8e;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;  
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /* border: 2px solid black; */
+}
+.card {
+  background-color: #ffffffd2;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  /* height: 80px; */
+  height: fit-content;
+  /* max-width: 300px; */
+  /* margin: 1rem; */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
+
+}
+
+/* chart section */
+.header{
+  text-align: center;
+  margin-top: 3rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.charts-container{
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  
+} 
+.chart{
+  min-height: 200px;
+}
+
+.right-sidebar{
+  /* border: 2px solid blue; */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  overflow-y: auto;
+}
+
+.right-parameters{
+  height: 40vh;
+}
+
+
+
+
+
+
+/* parameters edit */
+.temp{
+  background-color: #fee7da; 
+}
+.temp-sym{
+  background-color: rgba(255, 0, 0, 0.27);
+}
+
+.humidity{
+  background-color: #e1e9ff;
+}
+.hum-sym{
+  background-color: #b5c6f6;
+}
+.voltage{
+  background-color: #e9f2e3;
+}
+.vol-sym{
+  background-color: #ceeeb8;
+}
+
+.frequency{
+  background-color: #f3e8ff;
+}
+.freq-sym{
+  background-color: #ddc9f3;
+}
+
+.current{
+  background-color: #e0f7fa;
+}
+.cur-sym{
+  background-color: #b6e9f0;
+}
+
+.symbol{
+  padding: 1.2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.symbol img{
+  width: 100%;
+}
+.value{
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.name{
+  color: #999999;
+  font-weight: bold;
+  margin-top: 1rem;
+}
